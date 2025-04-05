@@ -250,3 +250,102 @@ body {
   .suggestion-item:hover {
     background-color: #f0f0f0;
 }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    /* Adjust sidebar width for tablets */
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+        padding: 60px 20px 20px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Hide sidebar and make it toggleable */
+    .sidebar {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: -250px;
+        width: 250px;
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 60px 20px 20px 20px;
+    }
+
+    /* Toolbar adjustments */
+    .toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for mobile */
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .installation h2,
+    .docker-swarm h2,
+    .templates h2 {
+        font-size: 28px;
+    }
+
+    .installation h3,
+    .docker-swarm h3,
+    .templates h3 {
+        font-size: 24px;
+    }
+
+    .installation ol,
+    .docker-swarm ol,
+    .docker-swarm ul {
+        padding-left: 15px;
+    }
+
+    .installation pre,
+    .docker-swarm pre,
+    .templates pre {
+        font-size: 12px;
+    }
+}
