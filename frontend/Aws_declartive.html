@@ -13,7 +13,11 @@
 <body class="official">
   <!-- Header Toolbar -->
   <header class="toolbar">
-    <div class="logo" onclick="navigateHome()">DevOps-Bot</div>
+    <div class="logo" onclick="navigateHome()">
+      <img src="styles/assets/images/debops-bot.png" alt="DevOps-Bot Logo" class="logo-img">
+      <span class="logo-text">DevOps-Bot</span>
+    </div>
+    <div class="right-section">
     <nav class="nav-links">
       <a href="officialwebsite.html" class="nav-link" onclick="navigateOfficialWebsite()">Home</a>
       <!-- <a href="features.html" class="nav-link">Features</a> -->
@@ -22,6 +26,7 @@
       <a href="comingsoon.html" class="nav-link">Blog</a>
       <a href="About.html" class="nav-link">About</a>
     </nav>
+    </div>
     <div class="search-bar">
       <input type="text" id="search-input" placeholder="Search...">
       <button onclick="performSearch()">Search</button>
